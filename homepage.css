@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.appbar {
+    background-color: rgb(91, 170, 185); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    min-height: 2.2em;
+
+    z-index: 10;
+}
+
+.appbar a:hover {
+    scale: 1.1;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    margin-left: 2rem;
+    column-gap: 8px;
+}
+
+.nav-left a {
+  width: fit-content;
+  height: fit-content;
+}
+
+.nav-right {
+    align-items: right;
+    margin-right: 2rem;
+    width: 6vw;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+    
+}
+
+.logo img {
+    height: 25px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    height: 2em;
+    border: 0;
+    border-radius: 0.5em;
+    padding-left: 1em;
+    width: 60%;
+    min-width: 10rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 8vh;
+    background-color: aliceblue;
+    padding: 0 1.5rem;
+}
+
+.container section {
+    margin-top: 1.5rem;
+    border-radius: 0.5em;
+    padding: 1.5rem;
+    background-color: rgba(91, 170, 185, 0.3);
+}
+
+.trending, .trending a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 !important;
+}
+
+.category-content, .other-content, .offers-tab, .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: inherit;
+    gap: 1.5rem;
+}
+
+.category-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 3rem;
+    width: 15rem;
+    min-height: 2rem;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+}
+
+.container a:hover {
+    box-shadow: 0px 5px 15px black;
+}
+
+.other-content a {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.5em;
+}
+
+.offers-tab a {
+    width: calc((100% - 1.5rem) / 2);
+    height: fit-content;
+    border-radius: 0.5em;
+}
+
+.footer {
+    margin-bottom: 1.5rem;
+}
+
+.footer-content {
+    width: fit-content;
+}
+
+.contact-us, .social-media {
+    background-color: aliceblue;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 0.5em;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-icons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+}
+
+.media-icons, .contact-us p {
+    margin-top: 1.5rem;
+
+}
+
+.media-icons a {
+    scale: 2;
+}
+
+.copyright {
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    object-fit: cover;
+}

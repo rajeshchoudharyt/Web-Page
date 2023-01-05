@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./homepage.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <header class="appbar">
+            <nav class="nav-left">
+                <button onclick="openNav(this)" class="material-icons">menu</button>
+                <a href="Homepage.html" class="logo"><img src="https://i.pinimg.com/originals/d2/17/f1/d217f1b6184ad205cab23a8890879fa2.jpg" alt="logo"></a>
+                <input type="text" id="search" placeholder="search">
+            </nav>
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="" class="material-icons">shopping_cart_checkout</a></li>
+                    <li><a href="Login.html" class="material-icons">account_circle</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div id="sidenav" class="sidenav">
+                <a href="">Home</a>
+                <a href="">Shop By Category</a>
+                <a href="">Offers</a>
+                <a href="">Account</a>
+                <a href="">Help</a>
+                <a href="">About Us</a>
+            </div>
+
+            <section class="trending">
+                <a href="./Product.html"><img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/474c69a2c8f12e5d.png?q=50" alt="image"> </a>
+            </section>
+
+            <section class="category">
+                <h2>Shop By Category</h2>
+                <div class="category-content">
+                    <a href="">Mobiles</a>
+                    <a href="">Clothing</a>
+                    <a href="">Electronics</a>
+                    <a href="">Home</a>
+                    <a href="">Beauty</a>
+                    <a href="">Grocery</a>
+                    <a href="">Furniture</a>
+                </div>
+            </section>
+
+            <section class="other-content">
+                <a href=""><img src="https://m.media-amazon.com/images/G/31/img21/OHL_HMT/carousal/gl/unrec/1._SS400_QL85_.jpg" alt="image"> </a>
+                <a href=""><img src="https://m.media-amazon.com/images/G/31/img21/OHL_HMT/carousal/gl/unrec/1._SS400_QL85_.jpg" alt="image"> </a>
+                <a href=""><img src="https://m.media-amazon.com/images/G/31/img21/OHL_HMT/carousal/gl/unrec/1._SS400_QL85_.jpg" alt="image"> </a>
+                <a href=""><img src="https://m.media-amazon.com/images/G/31/img21/OHL_HMT/carousal/gl/unrec/1._SS400_QL85_.jpg" alt="image"> </a>
+            </section>
+            <section class="offers">
+                <h2>Offers</h2>
+                <div class="offers-tab">
+                    <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/OHL-creatives-2022/PC.jpg" alt="offer"> </a>
+                    <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/OHL-creatives-2022/PC.jpg" alt="offer"> </a>
+                </div>
+            </section>
+            <section class="footer">
+                <h2>About Us</h2>
+                <div class="footer-content">
+                    <div class="contact-us">
+                        <h3>Contact Us</h3>
+                        <p>xyg@gmail.com<br><br>+91 9999999999</p>
+                    </div>
+                    <div class="social-media">
+                        <h3>Social Media</h3>
+                        <div class="media-icons">
+                            <a href="" class="fab fa-facebook-f"></a>
+                            <a href="" class="fab fa-twitter"></a>
+                            <a href="" class="fab fa-instagram"></a>
+                            <a href="" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">@ copyright</p>
+            </section>
+        </div>
+        <script>
+            var nav = true;
+            function openNav(element) {
+                if(nav) {
+                    document.getElementById("sidenav").style.display = "block";
+                    nav = false;
+                }
+                else {
+                    document.getElementById("sidenav").style.display = "none";
+                    nav = true;
+                }
+            }
+        </script>
+    </body>
+</html>

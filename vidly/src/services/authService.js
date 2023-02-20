@@ -17,5 +17,9 @@ export function logout() {
     localStorage.removeItem("email");
 }
 
-const obj = { login, logout, loginWithJwt };
+export function getCurrentUser() {
+    return localStorage.getItem("token");
+}
+
+const obj = { login, logout, loginWithJwt, getCurrentUser };
 export default obj;
